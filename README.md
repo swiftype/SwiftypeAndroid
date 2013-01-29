@@ -53,4 +53,4 @@
 
 		<uses-permission android:name="android.permission.INTERNET" />
 
-  12. Use a SearchView or the SearchDialog to start a search. For an example take a look at our SwiftypeAndroidExample repository at github. More information can be found at the [Android Documentation](http://developer.android.com/training/search/setup.html).
+  12. Use a SearchView or the SearchDialog to start a search. For an example take a look at our [SwiftypeAndroidExample](https://github.com/swiftype/SwiftypeAndroidExample) repository at github. More information can be found at the [Android Documentation](http://developer.android.com/training/search/setup.html).
