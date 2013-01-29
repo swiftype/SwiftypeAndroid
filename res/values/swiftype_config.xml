@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- The database version MUST be incremented on any changes in this file-->
+    <integer name="database_version">7</integer>
+    
+    <!-- THIS FIELD MUST BE UPDATED TO AVOID CONFLICTS WITH OTHER USERS OF THIS LIBRARY
+         Please append your default package namespace to the provided string, e.g.
+         com.swiftype.android.searchContentProvider.com.example.mysearchapp -->
+    <string name="search_content_provider_authority">com.swiftype.android.searchContentProvider</string>
+
+    <!-- THIS FIELD MUST BE UPDATED TO MATCH YOUR ENGINE:
+         Please enter the engine key of your Swiftype search engine here -->
+    <string name="engine_key">5eMMdfkKCgz5wxyhR9RL</string>
+    
+    <!-- Specify all document types you want to be activated for this application.
+         For crawler-based engines you can use '@array/crawler_based' and for
+         WordPress engines we provide '@array/wordpress'. You can modify these
+         configurations below as needed.
+         For API-based engines you can add multiple document types, if needed. -->
+    <array name="document_types">
+        <item>@array/crawler_based</item>
+    </array>
+    
+    <!-- Default configuration for crawler-based engines -->
+    <array name="crawler_based">
+        <!-- Name of the document type -->
+        <item name="name">page</item>
+        <!-- Document field used to identify the document (e.g. external_id or url) -->
+        <item name="identifier_field">url</item>
+        <!-- Layout used to display one result item -->
+        <item name="result_item_layout">@layout/page_result_item</item>
+        <!-- Comma separated fields used to fill the layout (order must match display_resources order)-->
+        <item name="display_fields">title,body</item>
+        <!-- Resources to insert the matching display_field into the result_item_layout -->
+        <item name="display_resources">@array/title_body_resources</item>
+        <!-- Fields used for the suggest dropdown. The order and count must match
+             suggest_columns below -->
+        <item name="suggest_display_fields">title,sections</item>
+    </array>
+    
+    <!-- Default configuration for WordPress engines -->
+    <array name="wordpress">
+        <item name="name">posts</item>
+        <item name="identifier_field">url</item>
+        <item name="result_item_layout">@layout/page_result_item</item>
+        <item name="display_fields">title,body</item>
+        <item name="display_resources">@array/title_body_resources</item>
+        <item name="suggest_display_fields">title</item>
+    </array>
+    
+    <!-- Default resources for search results. Count must match display_fields -->
+    <array name="title_body_resources">
+        <item>@id/page_item_title</item>
+        <item>@id/page_item_body</item>
+    </array>
+    
+    <!-- Maximum characters per field in search results -->
+    <integer name="max_result_field_length">120</integer>
+    <!-- Maximum characters per field in suggest results -->
+    <integer name="max_suggest_field_length">60</integer> 
+    
+    <!-- Default configuration for suggestions. Allowed values are:
+            - suggest_text_1
+            - suggest_text_2
+            - suggest_icon_1
+            - suggest_icon_2
+    
+    For more details see {@linktourl http://developer.android.com/reference/android/app/SearchManager.html}
+    and {@linktourl http://developer.android.com/guide/topics/search/adding-custom-suggestions.html}. If
+    you want to change this, you also have to modify the suggest_layout below, if you use the SearchInputFragment.
+    If you just use the search dialog or search widget provided by Android, this is not needed.
+     -->
+    <string-array name="suggest_columns">
+        <item>suggest_text_1</item>
+        <item>suggest_text_2</item>
+    </string-array>
+    
+    <!-- Resources used to display the suggest_columns. Count must match suggest_columns. -->
+    <array name="suggest_resources">
+        <item>@id/suggest_text_1</item>
+        <item>@id/suggest_text_2</item>
+    </array>
+    
+    <!-- Default layout for suggestions with the SearchInputFragment. Suggestions from search dialog or
+         search widget provider by Android use there own layout and can't be modified here -->
+    <array name="suggest_layout">
+        <item>@layout/suggest_item</item>
+    </array>
+</resources>
