@@ -90,7 +90,7 @@ public class Engine {
 		try {
 			data.put("engine_key", engineKey);			
 		} catch (JSONException e) {
-			throw new IllegalArgumentException("Somethings wrong with your engine key: " + e.getMessage());
+			throw new IllegalArgumentException("Invalid engine key: " + e.getMessage());
 		}
 		try {
 			data.put("q", query);

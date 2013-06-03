@@ -82,7 +82,7 @@ public class RestConnection {
 			request.setHeader("Content-type", "application/json");
 			request.setHeader("Accept-Encoding", "gzip,deflate");
 		} catch (UnsupportedEncodingException e) {
-			throw new IllegalArgumentException("The used encoding for options is unsupported");
+			throw new IllegalArgumentException("Invalid encoding for options.");
 		}
 		return request;
 	}
