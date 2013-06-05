@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- The database version MUST be incremented on any changes in this file-->
-    <integer name="database_version">7</integer>
+    <integer name="database_version">1</integer>
 
     <!-- THIS FIELD MUST BE UPDATED TO AVOID CONFLICTS WITH OTHER USERS OF THIS LIBRARY
          Please append your default package namespace to the provided string, e.g.
@@ -11,7 +11,7 @@
 
     <!-- THIS FIELD MUST BE UPDATED TO MATCH YOUR ENGINE:
          Please enter the engine key of your Swiftype search engine here -->
-    <string name="engine_key">5eMMdfkKCgz5wxyhR9RL</string>
+    <string name="engine_key"></string>
 
     <!-- Specify all document types you want to be activated for this application.
          For crawler-based engines you can use '@array/crawler_based' and for
