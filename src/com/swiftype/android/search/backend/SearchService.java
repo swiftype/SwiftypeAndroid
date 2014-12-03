@@ -121,7 +121,10 @@ public class SearchService extends IntentService {
 				                                         NEEDS_UPDATE_QUERY_SELECTION,
 				                                         new String[] {queryHash, SearchContentProvider.searchStatusType(isSuggest), cutoffTimestamp},
 				                                         null);
-		return cursor.getCount() == 0;
+
+        Boolean hasValidResults = cursor.getCount() == 0;
+        cursor.close();
+        return hasValidResults;
 	}
 	
 	private void updateSearchStatus(final String queryHash, final boolean isSuggest) {
