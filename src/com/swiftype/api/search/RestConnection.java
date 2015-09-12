@@ -77,7 +77,7 @@ public class RestConnection {
 	public HttpPost post(final String requestUri, final String body) {
 		HttpPost request = new HttpPost(BASE_URL + requestUri);
 		try {
-			StringEntity entity = new StringEntity(body);
+			StringEntity entity = new StringEntity(body, "UTF-8");
 			request.setEntity(entity);
 			request.setHeader("Content-type", "application/json");
 			request.setHeader("Accept-Encoding", "gzip,deflate");
