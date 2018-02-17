@@ -1,6 +1,8 @@
-# SwiftypeAndroid
+# SwiftypeAndroid for Swiftype Site Search API
 
-SwiftypeAndroid is a library that makes it easy to add [Swiftype-powered search](http://swiftype.com/) to your Android application. To see an example application, visit the [SwiftypeAndroidExample repository](https://github.com/swiftype/SwiftypeAndroidExample).
+SwiftypeAndroid is a library that makes it easy to add [Swiftype-powered Site Search](http://swiftype.com/) to your Android application. To see an example application, visit the [SwiftypeAndroidExample repository](https://github.com/swiftype/SwiftypeAndroidExample).
+
+> **Note:** This client has been developed for the [Swiftype Site Search](https://www.swiftype.com/site-search) API endpoints only. You may refer to the [Swiftype Site Search API Documentation](https://swiftype.com/documentation/site-search/overview) for additional context.
 
 ## Installing and configuring SwiftypeAndroid
 
