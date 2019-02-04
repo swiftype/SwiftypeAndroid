@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/swiftype/SwiftypeAndroid/blob/master/logo-site-search.png?raw=true" alt="Elastic Site Search Logo"></p>
 
-> A first-party Android library to add [Elastic Site Search](https://swiftype.com/documentation/site-search/overview) to mobile applications.
+> A first-party Android library to add [Elastic Site Search](https://swiftype.com/documentation/site-search/overview) to Android applications.
 
 ## Contents
 
