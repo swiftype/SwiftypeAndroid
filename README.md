@@ -22,6 +22,7 @@
 	- If you have an API-based engine, or would like different result display behavior, extend SearchActivity and create a custom ShowDetailsFragment to present the results.
 4. Add the search activity to your AndroidManifest.xml (example for WebSearchActivity):
 
+```c
         <activity
 	      android:name="com.swiftype.android.search.webbased.WebSearchActivity"
 		  android:label="@string/app_name"
@@ -36,18 +37,20 @@
 		    android:name="android.app.searchable"
 		    android:resource="@xml/searchable" />
     	</activity>
-
+```
 5. Make it the default search activity for your application by adding the following lines to your main activity:
 
+```c
         <meta-data
 		  android:name="android.app.default_searchable"
 		  android:value="com.swiftype.android.search.webbased.WebSearchActivity" />
-
+```
 6. Copy `/res/values/swiftype_config.xml` and `/res/values/colors.xml` (if you use a light theme) from SwiftypeAndroid. You must set the values for `search_content_provider_authority` and `engine_key`.
 7. Copy `/res/xml/searchable.xml` from SwiftypeAndroid to your project.
 8. Add `android:configChanges="orientation|screenSize"` to the application attributes in `AndroidManifest.xml`.
 9. Add the search provider and service to your `AndroidManifest.xml`:
 
+```c
         <provider
           android:exported="false"
           android:authorities="@string/search_content_provider_authority"
@@ -55,11 +58,12 @@
 
         <service
           android:name="com.swiftype.android.search.backend.SearchService" />
-
+```
 10. Add Internet permissions to your `AndroidManifest.xml`:
 
+```c
 		<uses-permission android:name="android.permission.INTERNET" />
-
+```
 11. Use a SearchView or the SearchDialog to start a search. For an example, look at our [SwiftypeAndroidExample](https://github.com/swiftype/SwiftypeAndroidExample) repository. More information can be found in the [Android Documentation](http://developer.android.com/training/search/setup.html).
 
 ## FAQ 🔮
