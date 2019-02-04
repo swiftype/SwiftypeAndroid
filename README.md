@@ -61,6 +61,7 @@
 		<uses-permission android:name="android.permission.INTERNET" />
 
 11. Use a SearchView or the SearchDialog to start a search. For an example, look at our [SwiftypeAndroidExample](https://github.com/swiftype/SwiftypeAndroidExample) repository. More information can be found in the [Android Documentation](http://developer.android.com/training/search/setup.html).
+
 ## FAQ 🔮
 
 ### Where do I report issues with the client?
