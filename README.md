@@ -1,5 +1,10 @@
 <p align="center"><img src="https://github.com/swiftype/SwiftypeAndroid/blob/master/logo-site-search.png?raw=true" alt="Elastic Site Search Logo"></p>
 
+> **⚠️ This repository is deprecated ⚠️**
+>
+> **We are no longer maintaining an Android library for Site Search. However, you can still build excellent native and mobile web experiences with [Site Search APIs and clients](https://swiftype.com/mobile-search). Thank you! - Elastic**
+
+
 > A first-party Android library to add [Elastic Site Search](https://swiftype.com/documentation/site-search/overview) to Android applications.
 
 ## Contents
